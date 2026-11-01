@@ -1,0 +1,113 @@
+/* ***********************************************************/
+/*             LaVuelta2026                                  */
+/*          Estilos generales                                */
+/* ***********************************************************/
+/*    DATOS ESTUDIANTE                                       */
+/* ----------------------------------------------------------*/
+/*  Nombre y Apellidos: Santiago Jose Araque                 */
+/*  Correo electrónico (uniovi):    uo305904@uniovi.es       */
+/*  Grupo de laboratorio:  PL7                               */
+/* ***********************************************************/
+
+
+
+/* Gama cromática
+Color principal (1E369F)
+o Contraste de 7.19:1 con color secundario
+o Contraste de 10.07 :1 con color blanco
+
+Color secundario (E6DD79)
+o Contraste de 7.19:1 con color principal
+o Contraste de 14.9:1 con color negro
+
+Color negro (000000)
+Color blanco (ffffff)
+…..
+ */
+
+/* Especifidad : 010 */
+
+:root {
+    --color-principal: #1E369F;
+    --negro: #000000;
+    --blanco: #ffffff;
+    --color-secundario: #E6DD79;
+}
+
+/* Especifidad : 001 */
+body {
+    font-family: 'Century Gothic', Arial, sans-serif;
+    background-color: var(--blanco);        
+    color: var(--negro); 
+}
+
+/* Especifidad : 002 , 002, Selectores descendientes para enlaces*/
+header a,                                 
+footer a {                               
+  color: var(--blanco); /* ADVERTENCIA: color principal de fondo heredado de header y footer*/
+  text-decoration: none;
+                    
+}
+
+/* Especifidad : 001,001,001 */
+h2,h3,h4{                              
+  color: var(--color-principal); /* ADVERTENCIA: color blanco de fondo heredado de body*/
+}
+
+/* Especifidad : 001 ,001 */
+header,                                  
+footer {                                  
+  background-color: var(--color-principal);
+  color: var(--blanco);
+}
+
+/* Especifidad : 011 */
+a[aria-current="page"] {
+  font-weight: bold;
+  color:var(--color-secundario)
+}
+
+
+/* Especifidad : 012 , 012*/
+header a:hover,                           
+footer a:hover {                          
+  color: var(--color-secundario);/* ADVERTENCIA: color principal de fondo heredado de header y footer */
+}
+
+/* Especifidad : 003*/
+header + nav>ol{
+  font-size: 0.8em;
+  
+  list-style-type: none
+}
+
+
+/*Especifidad : 013 */
+nav[aria-label="migas"]>ol li{
+  display: inline;
+}
+
+/*Especifidad : 022 */
+nav[aria-label="migas"]>ol>li:last-child{
+ font-weight: bold;
+}
+
+/*Especifidad : 014 */
+section:has(picture) ul > li:first-child{
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/*Especifidad : 014 */
+section:has(picture) ul > li:nth-child(3){
+  font-size: 1.4em;
+}
+
+/*Especifidad : 014 */
+section:has(picture) ul > li:nth-child(4){
+ font-weight: bold;
+}
+
+
+
+
