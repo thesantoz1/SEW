@@ -15,7 +15,7 @@
     <!--Enlace a las hojas de estilo-->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-    <link rel="icon" href="multimedia/favicon.ico"/>
+    <link rel="icon" href="multimedia/favicon.ico" />
 </head>
 
 <body>
@@ -41,9 +41,9 @@
             <li>
                 <a href="index.html">Inicio</a>
             </li>
-            
+
             <li>&gt;&gt;</li>
-            
+
             <li>Juegos</li>
 
         </ol>
@@ -61,134 +61,132 @@
         <form action="#">
             <fieldset>
                 <legend>Vélez-Málaga > Peñas Blancas.Estepona</legend>
+                <!-- Pregunta 1 -->
+                <label for="pregunta1">¿Cuál es el número de la etapa?:</label>
+                <input type="number" id="pregunta1" min="1" max="21" required />
 
-                <form>
-    <fieldset>
-        <!-- Pregunta 1 -->
-        <label for="pregunta1">¿Cuál es el número de la etapa?:</label>
-        <input type="number" id="pregunta1" min="1" max="21" required />
+                <!-- Pregunta 2 -->
+                <label for="pregunta2">¿En qué fecha ocurre la etapa?:</label>
+                <input type="date" id="pregunta2" min="2026-08-22" max="2026-09-13" required />
 
-        <!-- Pregunta 2 -->
-        <label for="pregunta2">¿En qué fecha ocurre la etapa?:</label>
-        <input type="date" id="pregunta2" min="2026-08-22" max="2026-09-13" required />
+                <!-- Pregunta 3 -->
+                <label for="pregunta3">Seleccione la ciudad de salida:</label>
+                <select name="ciudad_salida" id="pregunta3" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="monaco">1. Mónaco</option>
+                    <option value="monaco-2">2. Mónaco</option>
+                    <option value="gruissan">3. Gruissan - Aude</option>
+                    <option value="andorra-la-vella">4. Andorra la Vella</option>
+                    <option value="falset">5. Falset, Costa Dorada</option>
+                    <option value="alcossebre">6. Alcossebre</option>
+                    <option value="vall-dalba">7. Vall d'Alba</option>
+                    <option value="pucol">8. Puçol</option>
+                    <option value="la-vila-joiosa">9. La Vila Joiosa</option>
+                    <option value="alcaraz">10. Alcaraz</option>
+                    <option value="cartagena">11. Cartagena</option>
+                    <option value="vera">12. Vera</option>
+                    <option value="almunecar">13. Almuñécar</option>
+                    <option value="jaen">14. Jaén</option>
+                    <option value="palma-del-rio">15. Palma del Río</option>
+                    <option value="cortegana">16. Cortegana</option>
+                    <option value="dos-hermanas">17. Dos Hermanas</option>
+                    <option value="el-puerto-de-santa-maria">18. El Puerto de Santa María</option>
+                    <option value="velez-malaga">19. Vélez-Málaga</option>
+                    <option value="la-calahorra">20. La Calahorra</option>
+                    <option value="carrefour-granada">21. Carrefour Granada</option>
+                </select>
 
-        <!-- Pregunta 3 -->
-        <label for="pregunta3">Seleccione la ciudad de salida:</label>
-        <select name="ciudad_salida" id="pregunta3" required>
-            <option value="" disabled selected>Seleccione una opción</option>
-            <option value="monaco">1. Mónaco</option>
-            <option value="monaco-2">2. Mónaco</option>
-            <option value="gruissan">3. Gruissan - Aude</option>
-            <option value="andorra-la-vella">4. Andorra la Vella</option>
-            <option value="falset">5. Falset, Costa Dorada</option>
-            <option value="alcossebre">6. Alcossebre</option>
-            <option value="vall-dalba">7. Vall d'Alba</option>
-            <option value="pucol">8. Puçol</option>
-            <option value="la-vila-joiosa">9. La Vila Joiosa</option>
-            <option value="alcaraz">10. Alcaraz</option>
-            <option value="cartagena">11. Cartagena</option>
-            <option value="vera">12. Vera</option>
-            <option value="almunecar">13. Almuñécar</option>
-            <option value="jaen">14. Jaén</option>
-            <option value="palma-del-rio">15. Palma del Río</option>
-            <option value="cortegana">16. Cortegana</option>
-            <option value="dos-hermanas">17. Dos Hermanas</option>
-            <option value="el-puerto-de-santa-maria">18. El Puerto de Santa María</option>
-            <option value="velez-malaga">19. Vélez-Málaga</option>
-            <option value="la-calahorra">20. La Calahorra</option>
-            <option value="carrefour-granada">21. Carrefour Granada</option>
-        </select>
+                <!-- Pregunta 4 -->
+                <label for="pregunta4">Seleccione la ciudad de meta:</label>
+                <select id="pregunta4" name="ciudadLlegada" required>
+                    <option value="" disabled selected>Seleccione una opción de llegada</option>
+                    <option value="monaco">1. Mónaco</option>
+                    <option value="manosque">2. Manosque</option>
+                    <option value="font-romeu">3. Font-Romeu</option>
+                    <option value="andorra-la-vella">4. Andorra la Vella</option>
+                    <option value="roquetes">5. Roquetes, Terres de l'Ebre</option>
+                    <option value="castello">6. Castelló</option>
+                    <option value="valdelinares">7. Aramón Valdelinares</option>
+                    <option value="xeraco">8. Xeraco</option>
+                    <option value="alto-de-aitana">9. Alto de Aitana, Costa Blanca</option>
+                    <option value="elche-de-la-sierra">10. Elche de la Sierra</option>
+                    <option value="lorca">11. Lorca</option>
+                    <option value="calar-alto">12. Calar Alto</option>
+                    <option value="loja">13. Loja</option>
+                    <option value="sierra-de-la-pandera">14. Sierra de la Pandera</option>
+                    <option value="cordoba">15. Córdoba</option>
+                    <option value="la-rabida">16. La Rábida, Palos de la Frontera</option>
+                    <option value="sevilla">17. Sevilla</option>
+                    <option value="jerez-de-la-frontera">18. Jerez de la Frontera</option>
+                    <option value="penas-blancas">19. Peñas Blancas, Estepona</option>
+                    <option value="collado-del-alguacil">20. Collado del Alguacil</option>
+                    <option value="granada">21. Granada</option>
+                </select>
 
-        <!-- Pregunta 4 -->
-        <label for="pregunta4">Seleccione la ciudad de meta:</label>
-        <select id="pregunta4" name="ciudadLlegada" required>
-            <option value="" disabled selected>Seleccione una opción de llegada</option>
-            <option value="monaco">1. Mónaco</option>
-            <option value="manosque">2. Manosque</option>
-            <option value="font-romeu">3. Font-Romeu</option>
-            <option value="andorra-la-vella">4. Andorra la Vella</option>
-            <option value="roquetes">5. Roquetes, Terres de l'Ebre</option>
-            <option value="castello">6. Castelló</option>
-            <option value="valdelinares">7. Aramón Valdelinares</option>
-            <option value="xeraco">8. Xeraco</option>
-            <option value="alto-de-aitana">9. Alto de Aitana, Costa Blanca</option>
-            <option value="elche-de-la-sierra">10. Elche de la Sierra</option>
-            <option value="lorca">11. Lorca</option>
-            <option value="calar-alto">12. Calar Alto</option>
-            <option value="loja">13. Loja</option>
-            <option value="sierra-de-la-pandera">14. Sierra de la Pandera</option>
-            <option value="cordoba">15. Córdoba</option>
-            <option value="la-rabida">16. La Rábida, Palos de la Frontera</option>
-            <option value="sevilla">17. Sevilla</option>
-            <option value="jerez-de-la-frontera">18. Jerez de la Frontera</option>
-            <option value="penas-blancas">19. Peñas Blancas, Estepona</option>
-            <option value="collado-del-alguacil">20. Collado del Alguacil</option>
-            <option value="granada">21. Granada</option>
-        </select>
+                <!-- Tipo de etapa (Uso correcto de legend) -->
+                <fieldset>
+                    <legend>¿Cuál es el tipo de la etapa?:</legend>
 
-        <!-- Tipo de etapa (Uso correcto de legend) -->
-        <fieldset>
-            <legend>¿Cuál es el tipo de la etapa?:</legend>
-            
-            <input type="radio" id="llana" name="tipo_etapa" value="llana" checked />
-            <label for="llana">Llana</label>
+                    <input type="radio" id="llana" name="tipo_etapa" value="llana" checked />
+                    <label for="llana">Llana</label>
 
-            <input type="radio" id="media_montaña" name="tipo_etapa" value="media_montaña" />
-            <label for="media_montaña">Media montaña</label>
+                    <input type="radio" id="media_montaña" name="tipo_etapa" value="media_montaña" />
+                    <label for="media_montaña">Media montaña</label>
 
-            <input type="radio" id="montaña" name="tipo_etapa" value="montaña" />
-            <label for="montaña">Montaña</label>
+                    <input type="radio" id="montaña" name="tipo_etapa" value="montaña" />
+                    <label for="montaña">Montaña</label>
 
-            <input type="radio" id="contrarreloj_individual" name="tipo_etapa" value="contrarreloj_individual" />
-            <label for="contrarreloj_individual">Contrarreloj Individual</label>
+                    <input type="radio" id="contrarreloj_individual" name="tipo_etapa"
+                        value="contrarreloj_individual" />
+                    <label for="contrarreloj_individual">Contrarreloj Individual</label>
 
-            <input type="radio" id="contrarreloj_equipos" name="tipo_etapa" value="contrarreloj_equipos" />
-            <label for="contrarreloj_equipos">Contrarreloj por equipos</label>
-        </fieldset>
+                    <input type="radio" id="contrarreloj_equipos" name="tipo_etapa" value="contrarreloj_equipos" />
+                    <label for="contrarreloj_equipos">Contrarreloj por equipos</label>
+                </fieldset>
 
-        <!-- Hitos -->
-        <fieldset>
-            <legend>¿Cuáles son los hitos presentes en la etapa?:</legend>
-            
-            <input type="checkbox" id="puerto_montaña" name="hitos" value="puerto_montaña" />
-            <label for="puerto_montaña">Puerto de montaña</label>
+                <!-- Hitos -->
+                <fieldset>
+                    <legend>¿Cuáles son los hitos presentes en la etapa?:</legend>
 
-            <input type="checkbox" id="puerto_categoria" name="hitos" value="puerto_categoria" />
-            <label for="puerto_categoria">Puerto categoría especial</label>
+                    <input type="checkbox" id="puerto_montaña" name="hitos" value="puerto_montaña" />
+                    <label for="puerto_montaña">Puerto de montaña</label>
 
-            <input type="checkbox" id="sprint_intermedio" name="hitos" value="sprint_intermedio" />
-            <label for="sprint_intermedio">Sprint intermedio</label>
+                    <input type="checkbox" id="puerto_categoria" name="hitos" value="puerto_categoria" />
+                    <label for="puerto_categoria">Puerto categoría especial</label>
 
-            <input type="checkbox" id="sprint_bonificado" name="hitos" value="sprint_bonificado" />
-            <label for="sprint_bonificado">Sprint bonificado</label>
+                    <input type="checkbox" id="sprint_intermedio" name="hitos" value="sprint_intermedio" />
+                    <label for="sprint_intermedio">Sprint intermedio</label>
 
-            <input type="checkbox" id="sin_hitos" name="hitos" value="sin_hitos" />
-            <label for="sin_hitos">Sin hitos</label>
-        </fieldset>
+                    <input type="checkbox" id="sprint_bonificado" name="hitos" value="sprint_bonificado" />
+                    <label for="sprint_bonificado">Sprint bonificado</label>
 
-        <!-- Pregunta 7 -->
-        <label for="pregunta7">¿Cuán difícil consideras esta etapa?:</label>
-        <input type="range" id="pregunta7" min="1" max="10" />
+                    <input type="checkbox" id="sin_hitos" name="hitos" value="sin_hitos" />
+                    <label for="sin_hitos">Sin hitos</label>
+                </fieldset>
 
-        <!-- Pregunta 8 -->
-        <label for="pregunta8">¿Cuál es la longitud de la etapa, expresada en kilómetros (km)?:</label>
-        <input type="number" id="pregunta8" min="9" max="214" step="0.1" required />
+                <!-- Pregunta 7 -->
+                <label for="pregunta7">¿Cuán difícil consideras esta etapa?:</label>
+                <input type="range" id="pregunta7" min="1" max="10" />
 
-        <!-- Pregunta 9 -->
-        <label for="pregunta9">¿Cuál es el desnivel de la etapa, expresado en metros (m)?:</label>
-        <input type="number" id="pregunta9" min="0" max="5000" required />
+                <!-- Pregunta 8 -->
+                <label for="pregunta8">¿Cuál es la longitud de la etapa, expresada en kilómetros (km)?:</label>
+                <input type="number" id="pregunta8" min="9" max="214" step="0.1" required />
 
-        <!-- Pregunta 10 -->
-        <label for="pregunta10">Describe brevemente la etapa (entre 50 y 200 caracteres):</label>
-        <textarea name="pregunta10" id="pregunta10" minlength="50" maxlength="200" required></textarea>
+                <!-- Pregunta 9 -->
+                <label for="pregunta9">¿Cuál es el desnivel de la etapa, expresado en metros (m)?:</label>
+                <input type="number" id="pregunta9" min="0" max="5000" required />
 
-        <!-- Pregunta Final -->
-        <label for="preguntaFinal">Por favor introduce tu nombre y apellido:</label>
-        <input type="text" id="preguntaFinal" maxlength="100" required />
+                <!-- Pregunta 10 -->
+                <label for="pregunta10">Describe brevemente la etapa (entre 50 y 200 caracteres):</label>
+                <textarea name="pregunta10" id="pregunta10" minlength="50" maxlength="200" required></textarea>
 
-        <button type="submit">Enviar</button>
-    </fieldset>
-</form>
+                <!-- Pregunta Final -->
+                <label for="preguntaFinal">Por favor introduce tu nombre y apellido:</label>
+                <input type="text" id="preguntaFinal" maxlength="100" required />
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
 
     </main>
 
